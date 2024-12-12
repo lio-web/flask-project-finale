@@ -11,6 +11,7 @@ const AuthProvider = ({ children }) => {
   const [userDataLoaded, setUserDataLoaded] = useState(false);
   console.log (localStorage.getItem('access_token'))
   const navigate = useNavigate()
+ 
 
   useEffect(() => {
     // Fetch authenticated user on component mount

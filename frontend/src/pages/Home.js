@@ -16,10 +16,12 @@ useContext(ProductContext);
           <li data-bs-target="#carouselExample" data-bs-slide-to="2"></li>
           <li data-bs-target="#carouselExample" data-bs-slide-to="3"></li>
           <li data-bs-target="#carouselExample" data-bs-slide-to="4"></li>
+          <li data-bs-target="#carouselExample" data-bs-slide-to="5"></li>
+          <li data-bs-target="#carouselExample" data-bs-slide-to="6"></li>
         </ol>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img className="d-block w-100" src="./images/white.png" alt="First slide" />
+            <img className="d-block w-100" src="./images/black1.jpg" alt="First slide" />
           </div>
           <div className="carousel-item">
             <img className="d-block w-100" src="./images/1234.webp" alt="Second slide" />
@@ -32,6 +34,12 @@ useContext(ProductContext);
           </div>
           <div className="carousel-item">
             <img className="d-block w-100" src="./images/istockphoto-1280463653-612x612.jpg" alt="Fifth slide" />
+          </div>
+          <div className="carousel-item">
+            <img className="d-block w-100" src="./images/black.jpg" alt="Sixth slide" />
+          </div>
+          <div className="carousel-item">
+            <img className="d-block w-100" src="./images/white.png" alt="Seventh slide" />
           </div>
         </div>
         <a className="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">

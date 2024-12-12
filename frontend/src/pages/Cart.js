@@ -46,7 +46,7 @@ const Cart = () => {
     <Container>
       <h2 className="mt-5" style={{ fontFamily: 'Impact, sans-serif' , fontSize:'50px'}}>Shopping Cart</h2>
       {cartItems.length === 0 ? (
-        <p>Your cart is empty.</p>
+        <p>Your cart is empty.<br></br>Login to see items in the cart.</p>
       ) : (
         <Table striped bordered hover className="mt-3">
           <thead>
