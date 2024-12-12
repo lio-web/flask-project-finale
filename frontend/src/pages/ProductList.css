@@ -1,0 +1,41 @@
+/* ProductList.css */
+.product-list {
+    text-align: center;
+  }
+  
+  .product-card {
+    width: 18rem;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-image {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .product-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .product-description {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+  
+  .product-buttons {
+    margin-top: 15px;
+  }
+  
+  .product-buttons button {
+    width: 100%;
+    margin-top: 5px;
+  }
+  
+  .product-buttons a {
+    width: 100%;
+    margin-top: 5px;
+  }
+  

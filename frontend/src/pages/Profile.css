@@ -1,0 +1,63 @@
+/* Profile.css */
+
+.container {
+    text-align: center;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-picture {
+    width: 10px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 80%;
+    margin-bottom: 20px;
+    margin: auto;
+  }
+  .profile-img{
+    width: 40%;
+    border-radius: 50%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    font-weight: bold;
+  }
+  
+  .submit-button {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .myprofile {
+    width: 50%;
+    margin: 50px auto;
+  }
+  
+  .profile-card {
+    margin-top: 10px;
+  }
+  
+  .detailss {
+    text-align: start;
+  }
+  
+  .editbtn {
+    font-size: larger;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  

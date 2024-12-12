@@ -1,0 +1,15 @@
+/* Footer.css */
+
+.icon:hover {
+    color: yellow;
+  }
+  
+  .contact {
+    text-align: start;
+  }
+  
+  .social-icons > a {
+    margin: 4px;
+    color: white;
+  }
+  
