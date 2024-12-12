@@ -6,6 +6,8 @@
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    background-image: url("https://images.pexels.com/photos/5650037/pexels-photo-5650037.jpeg?auto=compress&cs=tinysrgb&w=600");
   }
   
   .form-group {
@@ -23,6 +25,7 @@
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
+    
   }
   
   .button {
@@ -36,4 +39,7 @@
   
   .button:hover {
     background-color: #0056b3;
+  }
+  .Login{
+    background-image: url("https://images.pexels.com/photos/7621539/pexels-photo-7621539.jpeg?auto=compress&cs=tinysrgb&w=600");
   }

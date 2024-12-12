@@ -8,10 +8,16 @@ rating_bp = Blueprint('rating_bp', __name__)
 @rating_bp.route("/ratings", methods=["POST"])
 @jwt_required()
 def add_rating():
+    
     data = request.get_json()
     product_id = data['product_id']
     user_id = get_jwt_identity()
     rating_value = data['rating']
+
+    # Check if the product exists
+    product = Product.query.get(product_id)
+    if not product:
+        return jsonify({"error": "Product not found!"}), 404
 
     # Check if the user has already rated the product
     existing_rating = Rating.query.filter_by(product_id=product_id, user_id=user_id).first()
@@ -31,6 +37,10 @@ def add_rating():
 # Fetch all ratings for a product
 @rating_bp.route("/ratings/<int:product_id>")
 def get_ratings(product_id):
+    product = Product.query.get(product_id)
+    if not product:
+        return jsonify({"error": "Product not found!"}), 404
+    
     ratings = Rating.query.filter_by(product_id=product_id).all()
     rating_list = []
 
@@ -42,7 +52,12 @@ def get_ratings(product_id):
             'rating': rating.rating
         })
 
-    return jsonify(rating_list), 200
+    # Optionally, calculate the average rating
+    avg_rating = db.session.query(db.func.avg(Rating.rating)).filter_by(product_id=product_id).scalar()
+    return jsonify({
+        'ratings': rating_list,
+        'average_rating': avg_rating
+    }), 200
 
 # Fetch single rating
 @rating_bp.route("/ratings/<int:rating_id>")

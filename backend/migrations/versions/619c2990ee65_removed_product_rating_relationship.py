@@ -1,8 +1,8 @@
-"""initial migration.
+"""Removed product rating relationship
 
-Revision ID: 2c5484598d6d
+Revision ID: 619c2990ee65
 Revises: 
-Create Date: 2024-12-11 18:27:37.087629
+Create Date: 2024-12-12 23:41:13.974725
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = '2c5484598d6d'
+revision = '619c2990ee65'
 down_revision = None
 branch_labels = None
 depends_on = None
@@ -55,10 +55,8 @@ def upgrade():
     )
     op.create_table('rating',
     sa.Column('id', sa.Integer(), nullable=False),
-    sa.Column('product_id', sa.Integer(), nullable=False),
     sa.Column('user_id', sa.Integer(), nullable=False),
     sa.Column('rating', sa.Integer(), nullable=False),
-    sa.ForeignKeyConstraint(['product_id'], ['product.id'], ),
     sa.ForeignKeyConstraint(['user_id'], ['user.id'], ),
     sa.PrimaryKeyConstraint('id')
     )

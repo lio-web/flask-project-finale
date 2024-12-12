@@ -25,12 +25,12 @@ class Product(db.Model):
     image = db.Column(db.String(255))
     price = db.Column(db.Float)
     
-    ratings = db.relationship('Rating', backref='product', lazy=True)
+    # ratings = db.relationship('Rating', backref='product', lazy=True)
     carts = db.relationship('Cart', backref='product', lazy=True)
 
 class Rating(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    product_id = db.Column(db.Integer, db.ForeignKey('product.id'), nullable=False)
+    # product_id = db.Column(db.Integer, db.ForeignKey('product.id'), nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False) 
     rating = db.Column(db.Integer, nullable=False)
 

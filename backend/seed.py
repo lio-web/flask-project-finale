@@ -174,10 +174,7 @@ with app.app_context():
                 db.session.add(product)
 
 
-        # for product_data in products_data:
-        #     if not Product.query.filter_by(name=product_data['name']).first():
-        #         product = Product(**product_data)
-        #         db.session.add(product)
+        
 
         db.session.commit()
 
@@ -187,12 +184,15 @@ with app.app_context():
         products = Product.query.all()
 
         if user1 and user2 and len(products) >= 2:
-            if not Rating.query.filter_by(user_id=user1.id, product_id=products[0].id).first():
-                rating1 = Rating(product=products[0], user=user1, rating=5)
-                db.session.add(rating1)
-            if not Rating.query.filter_by(user_id=user2.id, product_id=products[1].id).first():
-                rating2 = Rating(product=products[1], user=user2, rating=4)
-                db.session.add(rating2)
+    # Assuming the original seed tried to assign ratings to specific products, 
+    # but now there's no 'product_id' field in the Rating model.
+    
+          if not Rating.query.filter_by(user_id=user1.id).first():  # Only filter by user_id now
+              rating1 = Rating(user_id=user1.id, rating=5)  # No product_id anymore
+              db.session.add(rating1)
+          if not Rating.query.filter_by(user_id=user2.id).first():  # Only filter by user_id now
+              rating2 = Rating(user_id=user2.id, rating=4)  # No product_id anymore
+              db.session.add(rating2)
 
         # Add cart items
         if user1 and user2 and len(products) >= 2:

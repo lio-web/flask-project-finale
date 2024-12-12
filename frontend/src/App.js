@@ -16,6 +16,9 @@ import RequestPasswordReset from './pages/RequestPasswordReset';
 import PasswordReset from './pages/ResetPassword';
 import PasswordResetSuccess from './pages/PasswordResetSuccess';
 import EditProfile from './pages/EditProfile';
+import Reviews from './pages/Reviews';
+
+
 
 function App() {
   return (
@@ -29,9 +32,11 @@ function App() {
               <Route path="/register" element={<Register />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/edit-profile" element={<EditProfile />} />
+              
               <Route path="/cart" element={<Cart />} />
               <Route path="/products" element={<ProductList />} />
               <Route path="/products/:id" element={<ProductDetail />} />
+              <Route path='/reviews' element={<Reviews/>} />
               <Route path="/request-password-reset" element={<RequestPasswordReset />} />
               <Route path="/reset-password/:token" element={<PasswordReset />} />
               <Route path="/password-reset-success" element={<PasswordResetSuccess />} />

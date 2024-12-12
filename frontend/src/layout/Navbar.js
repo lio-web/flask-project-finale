@@ -7,6 +7,9 @@ import {
   FaHome,
   FaList,
   FaSignInAlt,
+  // FaUserPlus,
+  FaStar,
+
 } from "react-icons/fa";
 
 import "./MyNavbar.css";
@@ -41,6 +44,9 @@ const MyNavbar = () => {
             </Nav.Link>
             <Nav.Link as={Link} to="/cart" className="nav-link">
               <FaShoppingCart className="mr-1" /> Cart
+            </Nav.Link>
+            <Nav.Link as={Link} to="/reviews" className="nav-link"> {/* Added Review Link */}
+              <FaStar className="mr-1" /> Review
             </Nav.Link>
             {!user ? (
               <Nav.Link as={Link} to="/login" className="nav-link">

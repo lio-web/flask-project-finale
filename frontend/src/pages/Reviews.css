@@ -1,0 +1,82 @@
+/* General styling for the reviews page */
+.reviews-page {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    background-color: antiquewhite;
+    background-image: url("https://images.pexels.com/photos/5498382/pexels-photo-5498382.jpeg?auto=compress&cs=tinysrgb&w=600");
+  }
+  
+  .reviews-page h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Form styling */
+  form {
+    margin-bottom: 30px;
+  }
+  
+  form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  form textarea {
+    resize: none;
+  }
+  
+  form button {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  form button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+  
+  /* Reviews list styling */
+  .mt-4 {
+    margin-top: 20px;
+  }
+  
+  .list-group-item {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: #f9f9f9;
+  }
+  
+  .list-group-item h5 {
+    margin: 0;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .list-group-item p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Alert styling */
+  .alert {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    background-color: #e9ecef;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+  }
+  
