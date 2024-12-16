@@ -8,7 +8,7 @@ from flask_cors import CORS
 from flask_jwt_extended import JWTManager
 from views import *
 import os
-from app import app
+# from app import app
 
 
 port = int(os.environ.get("PORT", 5000))
