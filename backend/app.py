@@ -7,11 +7,6 @@ from flask_cors import CORS
 
 from flask_jwt_extended import JWTManager
 from views import *
-import os
-# from app import app
-
-
-port = int(os.environ.get("PORT", 5000))
 
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = 'sqlite:///business.db'
@@ -49,4 +44,4 @@ def home():
 
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", debug=True)
+    app.run(port=5000, debug=True)
