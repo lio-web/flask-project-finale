@@ -5,7 +5,7 @@ import './Login.css';
 import swal from 'sweetalert';
 
 const Login = () => {
-  const { login } = useContext(AuthContext); // Auth context providing login functionality
+  const { login } = useContext(AuthContext); 
   const [formData, setFormData] = useState({ email: '', password: '' });
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);

@@ -45,7 +45,7 @@ const MyNavbar = () => {
             <Nav.Link as={Link} to="/cart" className="nav-link">
               <FaShoppingCart className="mr-1" /> Cart
             </Nav.Link>
-            <Nav.Link as={Link} to="/reviews" className="nav-link"> {/* Added Review Link */}
+            <Nav.Link as={Link} to="/reviews" className="nav-link">
               <FaStar className="mr-1" /> Review
             </Nav.Link>
             {!user ? (
