@@ -1,12 +1,12 @@
 from datetime import timedelta
-from backend.models import db, User, Product, Rating, Cart, TokenBlocklist
+from models import db, User, Product, Rating, Cart, TokenBlocklist
 from flask import Flask, jsonify, request
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_cors import CORS
 
 from flask_jwt_extended import JWTManager
-from backend.views import *
+from views import *
 
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = 'sqlite:///business.db'
