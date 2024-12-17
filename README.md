@@ -14,6 +14,14 @@ At Multi Hardware Ltd, our primary mission is to create opportunities for you an
     - Use SQLAlchemy ORM to join multiple tables to each other using one-to-one, one-to-many, many-to-many relationships.
 
 
+## LIVE SERVER
+ - FRONTEND: You can view the web live on
+ - (https://phase-4-final-project-online-store.vercel.app/)
+
+ - BACKEND: You can view the backend routes on 
+ - (https://flask-project-finale-10.onrender.com)
+
+
 # Project Setup 
 
 Follow the instructions below to set up and run the application.
